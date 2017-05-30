@@ -1,16 +1,15 @@
 /* For testing only */
-
-/**:not(body):not(html) {
+*:not(body):not(html) {
   box-sizing:border-box;
   border:1px dashed #000;
 }
 
 .columns {
   min-height: 100px;
-}*/
-
+}
 /* End for testing */
 
+/*-------------------Global-------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -18,43 +17,85 @@
   font-size: 100%;
 }
 
-li a {
-  color: red;
-  text-decoration: none;
-  padding: 10px;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-}
-
-
 img {
   max-width: 100%;
 }
-
+/*-------------------Container-------------------*/
 .container {
   width: 93%;
   padding: 2em 0;
   margin: auto;
 }
 
+/*-------------------Mast-------------------*/
+#mast li {
+  border-top: 1px solid black;
+}
+#mast li a {
+  color: red;
+  text-decoration: none;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+#mast i {
+  display: block;
+}
 #logo {
   display: block;
   margin: auto;
   text-align: center;
 }
 
+/*-------------------BelowMast-------------------*/
+.belowMast {
+  position: relative;;
+}
+
+/*-------------------Main-------------------*/
+.main {
+  overflow: auto;
+}
+
+.main h2 {
+  background: url("../images/ornament.png") no-repeat 0 50%;
+  font-size: 1.4em;
+  text-transform: lowercase;
+  text-align: center;
+  margin: 0.75em 0 1em;
+}
+
+.main b {
+  background: url("../images/bg.png");
+  font-weight: normal;
+  padding: 0 1em;
+}
+
+.figures {
+  float: left;
+  font-size: 10px;
+  line-height: 1.1;
+  margin: 0 3% 1.5em 0;
+  text-align: center;
+  width: 31%;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/*-------------------Media Queries-------------------*/
 @media screen and (max-width: 600px) {
   ul {
     width: 100%;
     overflow: auto;
     margin: 0 auto;
   }
+
   li {
     float: left;
     text-align: center;
     list-style: none;
     width: 31%;
   }
+
   li a {
     text-align: center;
     display: block;
@@ -65,11 +106,8 @@ img {
     font-size: 10px;
     margin-right: 3%;
   }
+
   .mast {
     position: relative;
   }
-  .belowMast {
-    position: relative;;
-  }
-
 }
