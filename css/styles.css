@@ -1,0 +1,75 @@
+/* For testing only */
+
+/**:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+.columns {
+  min-height: 100px;
+}*/
+
+/* End for testing */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+li a {
+  color: red;
+  text-decoration: none;
+  padding: 10px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 93%;
+  padding: 2em 0;
+  margin: auto;
+}
+
+#logo {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  ul {
+    width: 100%;
+    overflow: auto;
+    margin: 0 auto;
+  }
+  li {
+    float: left;
+    text-align: center;
+    list-style: none;
+    width: 31%;
+  }
+  li a {
+    text-align: center;
+    display: block;
+    padding: 10px 20px;
+    font: 10px Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-size: 10px;
+    margin-right: 3%;
+  }
+  .mast {
+    position: relative;
+  }
+  .belowMast {
+    position: relative;;
+  }
+
+}
